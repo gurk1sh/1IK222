@@ -1,3 +1,5 @@
+package src;
+
 import javafx.application.Application;
 import javafx.geometry.HPos;
 import javafx.geometry.Insets;
@@ -12,7 +14,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
-public class logIn extends Application {
+public class Login extends Application {
 
     public static void main(String[] args) {
         launch(args);
@@ -22,7 +24,7 @@ public class logIn extends Application {
     public void start(Stage primaryStage) {
 
         primaryStage.setTitle("Inloggning till Appurg");
-       GridPane pane = new GridPane();
+        GridPane pane = new GridPane();
 
         pane.setAlignment(Pos.CENTER);
         pane.setPadding(new Insets(30.5, 30.5, 13.5, 14.4));
@@ -55,7 +57,7 @@ public class logIn extends Application {
         pane.getChildren().addAll(pic);
 
 
-        Scene scene = new Scene(pane,450, 450);
+        Scene scene = new Scene(pane,1280, 900);
         primaryStage.setScene(scene);
         primaryStage.show();
 
